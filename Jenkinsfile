@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'qa', url: 'https://github.com/SivagattuDevops/devops-realtime-project.git', credentialsId: 'github-creds'
+                git branch: 'prod', url: 'https://github.com/SivagattuDevops/devops-realtime-project.git', credentialsId: 'github-creds'
             }
         }
         stage('Deploy to prod') {
